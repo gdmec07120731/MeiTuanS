@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+
+    <ImageView android:id="@+id/main_rv_item_img" android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+               android:layout_margin="15dp"
+               android:src="@drawable/dinner_icon"
+    />
+    <TextView android:id="@+id/main_rv_item_shop_name" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@+id/main_rv_item_img"
+              android:layout_toRightOf="@+id/main_rv_item_img"
+              android:text="莱恩咖啡厅"
+              android:textSize="@dimen/text_normal"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+
+              android:text="1.9Km"
+              android:layout_alignTop="@+id/main_rv_item_shop_name"
+              android:textSize="@dimen/tetx_small"
+    />
+
+    <RatingBar android:id="@+id/main_rv_shop_rating"
+               style="@style/Base.Widget.AppCompat.RatingBar.Small"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/main_rv_item_shop_name"
+               android:layout_toRightOf="@+id/main_rv_item_img"
+               android:rating="5"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_below="@+id/main_rv_item_shop_name"
+              android:layout_toRightOf="@+id/main_rv_shop_rating"
+              android:text="月售132单"
+              android:layout_marginLeft="10dp"
+              android:textSize="@dimen/tetx_small"
+    />
+
+    <View android:layout_width="match_parent" android:layout_height="5dp"
+          android:layout_below="@+id/main_rv_item_img"
+    android:background="#f4f4f4"/>
+</RelativeLayout>

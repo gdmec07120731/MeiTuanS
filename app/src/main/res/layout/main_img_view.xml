@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView android:id="@+id/takeaway_banner1" android:layout_width="match_parent"
+               android:layout_height="100dp"
+
+               android:scaleType="fitXY"
+               android:src="@drawable/takeaway_banner"
+    />
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/image_ll"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/takeaway_banner1"
+                  android:layout_alignParentStart="true">
+
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="2"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1.5">
+                <ImageView android:layout_width="match_parent"
+                           android:padding="1dp"
+
+                           android:layout_height="match_parent"
+                           android:background="@drawable/market_item"
+                           android:src="@drawable/takeaway_banner1"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="2"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:padding="1dp"
+
+                           android:background="@drawable/market_item"
+                           android:src="@drawable/takeaway_banner2"/>
+                <ImageView android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:padding="1dp"
+
+                           android:background="@drawable/market_item"
+                           android:src="@drawable/takeaway_banner3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1">
+
+            <ImageView android:layout_width="match_parent"
+                       android:background="@drawable/market_item"
+                       android:layout_height="wrap_content"
+                       android:padding="1dp"
+                       android:src="@drawable/takeaway_banner4"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#f4f4f4"
+          android:layout_below="@+id/image_ll"
+          />
+</RelativeLayout>
